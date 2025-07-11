@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '699847326213513');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=699847326213513&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> UNICORNIO NEGRO</title>
+    <link rel="icon" href="./img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script
+      src="https://kit.fontawesome.com/b426e1c00c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" /> <style>/* En tu archivo style.css */ .form-container {
+    background-color: rgba(255, 255, 255, 0.2); /* Highly transparent background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    backdrop-filter: blur(15px); /* Stronger frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle light border */
+    position: relative; /* For potential animations or overlays */
+}
+
+h2 {
+    color: #fff; /* White heading for contrast */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff; /* White labels */
+    font-weight: 400;
+    font-size: 1.1em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: calc(100% - 24px); /* Account for padding and border */
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.1); /* Very light transparent background for inputs */
+    color: #fff; /* White text input */
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+    border-color: rgba(255, 255, 255, 0.8); /* Brighter border on focus */
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque on focus */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Specific styling for number input to remove arrows */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+
+.submit-button {
+    background-color: rgba(0, 123, 255, 0.8); /* Transparent blue button */
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+    outline: none;
+    position: relative; /* For icon positioning */
+    overflow: hidden; /* Hide overflowing icon */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-button .icon {
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.submit-button:hover {
+    background-color: rgba(0, 86, 179, 0.9); /* Darker blue on hover */
+    transform: translateY(-5px); /* More pronounced lift */
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4);
+}
+
+.submit-button:hover .icon {
+    transform: translateX(5px); /* Icon moves slightly right */
+}
+
+#message {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: rgba(212, 237, 218, 0.9); /* Opaque success background */
+    color: #155724;
+    border: 1px solid rgba(195, 230, 203, 0.9);
+    border-radius: 8px;
+    display: none;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#message.hidden {
+    display: none;
+}
+
+#message.visible {
+    display: block;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 25px;
+        margin: 15px;
+        border-radius: 10px;
+        max-width: 95%; /* Allow it to be slightly wider on small screens */
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="number"],
+    .form-group textarea {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+        padding: 10px;
+    }
+
+    .submit-button {
+        padding: 12px 25px;
+        font-size: 1.1em;
+        width: 100%; /* Full width button on small screens */
+    }
+
+        }
+      
+.whatsapp-button {
+    position: fixed; /* O fixed si quieres que flote en la pantalla */
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: block; /* Para que la animación funcione mejor */
+}
+
+.whatsapp-button img {
+    width: 60px; /* Tamaño del icono */
+    height: auto;
+    animation: pulse 1.5s infinite; /* Aplica la animación 'pulse' */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3); /* Hace que el botón se agrande un poco */
+    }
+    100% {
+        transform: scale(1);
+    } 
+}  .floating-button {
+            display: inline-block;
+            padding: 10px 25px; 
+            font-size: 1em; margin-left: 75px;
+            font-weight: bold; 
+            color: #ffffff;
+            background-color: #fc5040; /* Un color vibrante para el botón */
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Sombra para profundidad */
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+
+            /* Animación de movimiento flotante */
+            animation: floatUpDown 3s ease-in-out infinite alternate; /* Aplica la animación */
+        }
+
+        /* Animación al pasar el mouse (hover) */
+        .floating-button:hover {
+            background-color: #e65243; /* Color más oscuro al pasar el mouse */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35); /* Sombra más pronunciada */
+        }
+
+        /* Definición de la animación de movimiento */
+        @keyframes floatUpDown {
+            0% {
+                transform: translateY(0); /* Posición inicial */
+            }
+            50% {
+                transform: translateY(-15px); /* Se mueve 15px hacia arriba */
+            }
+            100% {
+                transform: translateY(0); /* Vuelve a la posición inicial */
+            }
+        }
+      h1 {
+            font-size: 2em; /* Tamaño grande para el título */
+            color: #ffffff; /* Color inicial del texto */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Sombra suave inicial */
+            animation: glowEffect 3s infinite alternate ease-in-out; /* Animación aplicada */
+            text-align: center;
+            letter-spacing: 2px; /* Espaciado entre letras para mejor lectura */
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Definición de la animación */
+        @keyframes glowEffect {
+            0% {
+                color: #ffffff;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                             0 0 20px rgba(255, 255, 255, 0.2);
+                transform: scale(1);
+            }
+            50% {
+                color: #f33619; /* Un color dorado/amarillo brillante */
+                text-shadow: 0 0 20px rgba(242, 54, 54, 0.8), /* Resplandor más fuerte */
+                             0 0 40px rgba(255, 247, 246, 0.5),
+                             0 0 60px rgba(0, 0, 0, 0.3);
+                transform: scale(1.05); /* Ligeramente más grande */
+            }
+            100% {
+                color: #ffffff;
+                text-shadow: 0 0 10px rgba(255, 255, 255, 0.5),
+                             0 0 20px rgba(255, 255, 255, 0.2);
+                transform: scale(1);
+            }
+}.gradient-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ocupa al menos el alto completo de la ventana */
+            padding: 40px 20px;
+            position: relative;
+            overflow: hidden; /* Asegura que el gradiente no se desborde */
+        }
+
+        /* Fondo del Gradiente Dinámico */
+        .gradient-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #FF6B6B, #556270, #FF6B6B, #556270); /* Definición inicial del gradiente */
+            background-size: 400% 400%; /* Permite que el gradiente sea más grande que el contenedor */
+            animation: gradientAnimation 15s ease infinite; /* Aplica la animación */
+            z-index: 0; /* Coloca el fondo detrás del contenido */
+        }
+
+        /* Animación del Gradiente */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Contenedor del formulario sobre el gradiente */
+        .form-wrapper {
+            position: relative; /* Para que el z-index funcione correctamente */
+            background-color: rgba(255, 255, 255, 0.95); /* Fondo blanco semitransparente para el formulario */
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            z-index: 1; /* Asegura que el formulario esté sobre el gradiente */
+            animation: formFadeIn 1.2s ease-out; /* Animación de aparición */
+        }
+
+        .form-wrapper h2 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 600;
+        }
+
+        /* Estilos del grupo de entrada */
+        .input-group {
+            position: relative;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px 0;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: none;
+            background: transparent;
+            font-size: 1.1em;
+            color: #555;
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .input-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .input-group input:focus,
+        .input-group textarea:focus {
+            border-bottom-color: #007bff; /* Color azul al enfocar */
+        }
+
+        .input-group label {
+            position: absolute;
+            top: 12px;
+            left: 0;
+            color: #888;
+            font-size: 1.1em;
+            pointer-events: none;
+            transition: 0.3s ease all;
+        }
+
+        .input-group input:focus ~ label,
+        .input-group input:valid ~ label,
+        .input-group textarea:focus ~ label,
+        .input-group textarea:valid ~ label {
+            top: -18px;
+            font-size: 0.9em;
+            color: #007bff;
+        }
+
+        /* Estilos del botón de envío */
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 3px 10px rgba(0, 123, 255, 0.2);
+        }
+
+        /* Animación de aparición del formulario */
+        @keyframes formFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .form-wrapper {
+                padding: 30px 20px;
+            }
+            .form-wrapper h2 {
+                font-size: 1.8em;
+            }
+            .input-group input,
+            .input-group textarea {
+                font-size: 1em;
+            }
+            .submit-btn {
+                font-size: 1.1em;
+                padding: 12px 25px;
+            }
+        }.video-container {
+            max-width: 400PX; /* Ancho máximo para el video */
+            width: 400PX;  height: 400PX;/* Responsive: ocupa el 90% del ancho de la pantalla */
+            border: 3px solid #d32525; /* Un borde para que se vea mejor */
+            border-radius: 10px;
+            overflow: hidden; /* Asegura que el borde redondeado se aplique al video */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        video {
+            width: 100%; /* El video ocupa todo el ancho de su contenedor */
+            height: 100%; /* Mantiene la proporción del video */
+            display: block; /* Elimina espacio extra debajo del video */
+        }
+
+        .controls-info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+  </style>
+  </head> <a href="https://wa.me/+14029131620?text=Estoy%20interesado%20en%20tus%20servicios%20podrias%20realizar%20La%20consulta" class="whatsapp-button" target="_blank">
+    <img src="img/wp.png" alt="WhatsApp">
+</a>
+  <body>
+    <section id="home">
+      <div class="home-carousel">
+        <div class="home-carousel-img img1"></div>
+        <div class="home-carousel-img img2"></div>
+        <div class="home-carousel-img img3"></div>
+        <div class="home-carousel-img img4"></div>
+      </div>
+      <div class="home">
+        <header class="main-header">
+        <nav class="navbar">
+ <img src="./img/logo.png" alt="Descripción de la imagen" width="25" height="25"> 
+            
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#projects">Trabajos</a></li>
+                <li><a href="#zippy-team">Testimonios</a></li>                <li><a href="#video-projects">Videos</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+
+                </ul>
+        </nav>
+    </header>
+        <div class="home-content">
+          <h1 class="animated-title">MAESTRO DE LAS SIETE POTENCIAS</h1>
+          <p class="home-sub-text">
+           <br><br>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="project-text"><h1 >Trabajos 100% Garantizados</h1></div>
+      <div class="projects">
+        <div class="project-card pc-1 pc-light">
+          <div class="project-image">
+            <img src="./img/uni15.png" alt="project1" />
+          </div>
+          <div class="project-desc">
+            <h3>Mejora tu situacion economica en tu vida</h3>
+            <div class="project-card-btn">
+              <a href="https://wa.me/+14029131620?text=Estoy%20interesado%20en%20tus%20servicios%podrias%realizar%la%consulta" class="floating-button">
+                Consulta Gratis
+            </a>                </div>
+          </div>
+        </div>
+        <div class="project-card pc-2 pc-dark">
+          <div class="project-image">
+            <img src="./img/uni10.png" alt="project2" />
+          </div>
+
+          <div class="project-desc">
+            <h3>
+              limpieza Espiritual para liberar de todo mal
+              </h3>
+           
+            <div class="project-card-btn">
+              <a href="https://wa.me/+14029131620?text=Estoy%20interesado%20en%20tus%20servicios%podrias%realizar%la%consulta" class="floating-button">
+                Consulta Gratis
+            </a>               </div>
+          </div>
+        </div>
+     
+
+    
+        </div>
+        <div class="project-card pc-4 pc-dark">
+          <div class="project-image">
+            <img src="./img/uni18.png" alt="project4" />
+          </div>
+
+          <div class="project-desc">
+            <h3>
+              Evita Errores y fracasos atrae la prosperidad
+              </h3>
+       
+            <div class="project-card-btn">
+              <a href="https://wa.me/+14029131620?text=Estoy%20interesado%20en%20tus%20servicios%podrias%realizar%la%consulta" class="floating-button">
+                Consulta Gratis
+            </a>                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="zippy-team">
+      <div class="zippy-team">
+        <div class="zippy-head">
+          <h1>Testimonios</h1>
+        </div>
+        <div class="zippy-team-members">
+          <div class="ztm-row ztm-row-1">
+            <div class="ztm-card ztm-card-1">
+              <div class="ztm-img ztm-img-1">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img src="./img/uni5.png" alt="camilie" /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">Ximena</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role">Estaba devastada después de que mi pareja me dejó. Sentía que mi vida se desmoronaba. Recurrí al brujo unicornio negro y, para mi asombro, en poco tiempo, mi amor regresó.</p>
+
+              </div>
+            </div>
+            <div class="ztm-card ztm-card-2">
+              <div class="ztm-img ztm-img-2">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img
+                  src="./img/team/christian-creative-head.jpg"
+                  alt="christian"
+                /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">Danilo y Marcela</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role">Pensabamos terminar nuestra relación de mas de 10 años debido a problemas pequeños que convertiamos en grandes eliminamos de nuestra vida todo lo negativo.</p>
+              </div>
+            </div>
+            <div class="ztm-card ztm-card-3">
+              <div class="ztm-img ztm-img-3">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img
+                  src="./img/team/serene-Marketing-Manager.jpg"
+                  alt="serene"
+                /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">Carolina</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role">Después de una consulta, el  identificó un mal que me habían hecho. Con su ayuda, mi salud mejoró drásticamente, la pesadez desapareció y volví a sentirme yo misma. ¡Recuperé mi vida!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="ztm-row ztm-row-2">
+            <div class="ztm-card ztm-card-4">
+              <div class="ztm-img ztm-img-4">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img src="./img/team/emilia-art-director.jpg" alt="emilia" /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">Emilio</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role"> El unicornio negro hizo una limpieza profunda y nos brindó protección. Desde entonces, la atmósfera en el hogar es de paz, y la buena vibra ha regresado. Nos liberó de lo que nos estaba afectando.</p>
+              </div>
+            </div>
+            <div class="ztm-card ztm-card-5">
+              <div class="ztm-img ztm-img-5">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img src="./img/team/george-senior-designer.jpg" alt="george" /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">George</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role">  Después de su intervención, las oportunidades empezaron a surgir y, en cuestión de meses, obtuve el ascenso que tanto anhelaba. Él me ayudó a despejar el camino hacia mis metas.</p>
+              </div>
+            </div>
+            <div class="ztm-card ztm-card-6">
+              <div class="ztm-img ztm-img-6">
+                <div class="ztm-social-icon">
+                  <a
+                    target="blank"
+                    href="https://workspace.google.com/intl/en_in/"
+                    ><i class="ztm-fab fab fa-google-plus-g"></i
+                  ></a>
+                  <a target="blank" href="https://www.twitter.com">
+                    <i class="ztm-fab fab fa-twitter"></i>
+                  </a>
+                  <a target="blank" href="https://www.facebook.com">
+                    <i class="ztm-fab fab fa-facebook-f"></i>
+                  </a>
+                </div>
+                <!-- <img src="./img/team/ariana-web-developer.png" alt="ariana" /> -->
+              </div>
+              <div class="ztm-desc">
+                <h3 class="ztm-name">Retiro espiritual</h3>
+                <p class="ztm-role">⭐️⭐️⭐️⭐️⭐️</p>                <p class="ztm-role">Todos en el grupo sintieron la purificación inmediata con el actuar de las siete potencias una experiencia imposible de olvidar. El escalar espiritual brinda nuevas oportunidades de autoconectarse con su tu ser mas interno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+    <section id="video-projects">
+      <div class="vps">
+        <div class="video-project-title"><h1>Videos testimoniales</h1></div>
+        <div class="video-projects">
+          <div class="vp vp-1">
+         <div class="video-container">
+        <video controls>
+            <source src="./img/brujo1.mp4" type="video/mp4">
+            Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div
+          <div class="vp vp-2">
+        <div class="video-container">
+        <video controls>
+          <source src="./img/brujo2.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div
+          </div>
+          <div class="vp vp-3">
+          <div class="video-container">
+        <video controls>
+          <source src="./img/brujo1.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
+    </div
+          </div>
+        </div>
+      </div>
+    </section>
+   
+ 
+    <section id="contact">
+      <div class="contact">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d562.4111853338835!2d-118.30907039597035!3d34.18437554053281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d442cb53e5%3A0xc2030e66eafd342f!2szippy%20services!5e0!3m2!1sen!2sin!4v1639843453078!5m2!1sen!2sin"
+            width="750"
+            height="650.6"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <section class="gradient-section">
+          <div class="gradient-background"></div>
+          <div class="form-container">
+            <h2>Contáctanos</h2>
+            <form id="contactFormHostinger">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 1234567" required>
+                </div>
+                <div class="form-group">
+                    <label for="motivo_consulta">Motivo de Consulta:</label>
+                    <textarea id="motivo_consulta" name="motivo_consulta" rows="5" placeholder="Cuéntanos tu consulta..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">
+                    Enviar Mensaje
+                    <span class="icon">&#x27A4;</span>
+                </button>
+            </form>
+            <div id="message" class="hidden">
+                ¡Tu mensaje ha sido enviado con éxito! Pronto me pondré en contacto contigo.
+            </div>
+        </div>
+
+    <div id="messageContainer" class="message-container">
+        <p id="messageText"></p>
+        <button id="closeMessage">Cerrar</button>
+    </div>
+          </div>
+      </section>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer">
+        <div class="fo-address fo">
+          <div class="fo-add-head">
+            <h3>DIRECCIÓN</h3>
+          </div>
+          <div class="fo-add-content">
+            <a href="https://goo.gl/maps/QPnLhsJFdpu25zkM6">
+              <p>Lorem ipsum dolor,234</p>
+              <p>1200 consectetur</p>
+              <p>adipiscing</p>
+            </a>
+          </div>
+        </div>
+        <div class="fo-follow-us fo">
+          <div class="fo-fol-head">
+            <h3>SIGUENOS</h3>
+          </div>
+          <div class="fo-fol-content">
+            <div class="fo-row-1">
+       
+             
+            
+            </div>
+            <div class="fo-row-2">
+              <a target="blank" href="https://www.facebook.com"
+                ><i class="fab fa-facebook-f"></i
+              ></a><a target="blank" href="https://www.facebook.com"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+         
+              <a
+                target="blank"
+                href="https://www.tumblr.com
+              "
+                ><i class="fab fa-tumblr"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fo-contact-us fo">
+          <div class="fo-con-head">
+            <h3>CONTÁCTANOS</h3>
+          </div>
+          <div class="fo-con-content">
+            <div class="fo-phone">
+              <a href="#" class="fo-p"></a>
+            </div>
+            <div class="fo-skype">
+              <a href="#" class="fo-p">UNICORNIO</a>
+            </div>
+            <div class="fo-mail">
+              <a href="#" class="fo-p">NEGRO</a>
+            </div>  <div class="fo-mail">
+              <a href="#" class="fo-p">2025</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>    <script src="script.js"></script>
+
+  </body>
+</html>
